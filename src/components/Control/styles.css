@@ -1,0 +1,9 @@
+.ctrl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    height: 100%;
+}

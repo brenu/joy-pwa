@@ -5,7 +5,7 @@ import Actions from './Actions'
 import JoyStick from './JoyStick'
 
 const Control = () => (
-    <div>
+    <div className='ctrl'>
         <JoyStick />
         <Actions />
     </div>
