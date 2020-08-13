@@ -1,19 +1,19 @@
 import React from 'react';
 import './styles.css';
-import { Joystick } from 'react-joystick-component';
+import ReactNipple from 'react-nipple';
 
-function handleMove() {
-    console.log('moving')
-}
 
-function handleStop() {
-    console.log('stopped');
-}
+const Control = () => (
 
-const JoyStick = () => (
-    <div>
-        <Joystick size={100} baseColor="red" stickColor="blue" move={handleMove} stop={handleStop}></Joystick>
+    <div className="joy">
+        <ReactNipple 
+        options={{mode: 'static', position: {top: '50%', right: '50%'}}}
+        style={{
+            width: 150,
+            height: 150,
+            position: 'relative',
+        }} />
     </div>
-);
 
-export default JoyStick;
+)
+export default Control;
