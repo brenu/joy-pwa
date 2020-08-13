@@ -12,7 +12,8 @@ const Control = () => (
             width: 150,
             height: 150,
             position: 'relative',
-        }} />
+        }}
+        onMove={(data, evt) => console.log(evt.direction)} />
     </div>
 
 )
